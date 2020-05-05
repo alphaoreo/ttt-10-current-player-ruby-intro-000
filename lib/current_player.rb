@@ -5,6 +5,15 @@ def turn_count(board)
       level += 1
     end
   end
+  return level
 end
 
-def current_player
+def current_player(board)
+  player = ""
+  level = turn_count(board)
+  if level %2 ==0
+    player = "X"
+  else
+    player= "O"
+  end
+end

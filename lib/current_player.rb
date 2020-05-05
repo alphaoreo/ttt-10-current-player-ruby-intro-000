@@ -1,7 +1,7 @@
 def turn_count(board)
   level=0
   board.each do |spot|
-    if spot == "X" || spot !="O"
+    if spot == "X" || spot =="O"
       level += 1
     end
   end
